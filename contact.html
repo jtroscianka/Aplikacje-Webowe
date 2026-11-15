@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="skrypt/motive.js" defer></script>
+  <script src="skrypt/watch.js" defer></script>
+  <title>Kontakt</title>
+</head>
+
+<body>
+  <header>
+    <p id="clock"></p>
+    <img id="Logo" src="img/logo.png" alt="Logo" />
+    <h1>Jan Trościanka</h1>
+    <button type="button" id="toggle"></button>
+  </header>
+  <nav>
+    <a href="index.html">O mnie</a>
+    <a href="experience.html">Doświadczenie</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="gallery.html">Galeria</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Skontaktuj się ze mną</h2>
+      <form>
+        <label for="fname">Imię:</label>
+        <input required type="text" id="fname" name="fname" />
+        <label for="lname">Nazwisko:</label>
+        <input required type="text" id="lname" name="lname" />
+        <label for="mail">E-mail:</label>
+        <input required type="email" id="mail" name="mail" />
+        <label for="subject">Wybierz temat wiadomości:</label>
+        <select name="subject" id="subject" required>
+          <option value="" selected disabled>Wybierz temat</option>
+          <option value="question">Pytanie</option>
+          <option value="task">Zadanie</option>
+          <option value="info">Informacja</option>
+          <option value="urgent">Pilna sprawa</option>
+        </select>
+        <label for="text">Treść wiadomości:</label>
+        <textarea required id="text" name="text" rows="6"></textarea>
+        <input type="submit" value="Wyślij" />
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© Jan Trościanka 2026</p>
+  </footer>
+</body>
+
+</html>
