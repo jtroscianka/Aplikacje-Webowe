@@ -31,6 +31,9 @@ body {
     sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
 }
 header {
   position: relative;
@@ -81,9 +84,6 @@ nav a {
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 4px;
-  transition:
-    background-color 0.2s,
-    color 0.2s;
 }
 nav a:hover {
   background-color: var(--secondary-color);
@@ -214,7 +214,6 @@ input[type="submit"] {
   height: calc(100% - 45px);
   border: none;
   object-fit: contain;
-  background-color: #000;
 }
 .container div p {
   position: absolute;

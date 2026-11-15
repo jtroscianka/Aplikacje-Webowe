@@ -1,0 +1,30 @@
+Hosting: https://jtroscianka.github.io/Aplikacje-Webowe/
+
+Projekt ma 4 podstrony: artykuł, doświadczenie (tabela), kontakt (formularz) i galeria (kafelki). W JavaScript zrobiłem zegar oraz zmianę motywu jasny-ciemny (oba elementy w navbarze). Artykuł, doświadczenie i galeria są uładnioną wersją ćwiczeń z laba 1. Formularz jest zabezpieczony atrybutami required i odpowiednimi typami oraz opisany labelami.
+
+index.html i experience.html: bez większych zmian względem ostatniego ćwiczenia.
+
+gallery.html: 
+preload="metadata" – żeby wideo pobierało podstawowe metadane pliku w celu szybszego ładowania strony, a faktyczny dźwięk i obraz dopiero po kliknięciu play
+controls – żeby wyświetlały się kontrolki takie jak pauza, ściszanie itp.
+
+contact.html: 
+disabled – blokuje wysłanie/wybór domyślnej opcji
+required – wymaga wybrania czegoś/wpisania treści
+type="email" – wymusza, by wprowadzona wartość była mailem (np. miała @).
+
+style.css:
+--primary-color: #c62836; i background-color: var(--primary-color); – żeby nie musieć wszędzie wpisywać hexów.
+transform: translateX(-50%); – przesunięcie elementu w poziomie.
+transition: background-color 0.2s, color 0.2s; – czas trwania przejść (w tym przypadku zmian kolorów).
+@media (max-width: 768px) – stosuje zawarte w nim zmiany, gdy szerokość ekranu wynosi 768 pikseli lub mniej.
+
+watch.js:
+new Date() – pobranie obecnego czasu.
+toLocaleTimeString('pl-PL') – konwersja.
+setInterval(setClock, 1000); – wykonywanie funkcji co sekundę.
+
+motive.js:
+localStorage.setItem() – dodanie do local storage.
+localStorage.getItem('theme') – pobranie elementu z local storage.
+document.body.classList.toggle('dark'); – dodaje klasę dark do body lub ją usuwa, w zależności od obecnego stanu.
